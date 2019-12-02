@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title kidsport
+        // Font-Awesome
+        link(rel="stylesheet", href="css/all.min.css")
+        // Google_font
+        link(href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Montserrat&display=swap", rel="stylesheet")
+        // Bootstrap3
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        // our_style
+        link(rel="stylesheet", href="css/style.css")
+    body#home.home
+      // start_menu_navigation
+      nav(class="navbar navbar-default")
+        // container
+        .container
+          div(class="navbar-header")
+            button(class="navbar-toggle collapsed", data-target="#kids_menu", data-toggle="collapse")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            span(class="navbar-brand", data-value="#home"): i(class="fas fa-align-left")
+          div(class="collapse navbar-collapse", id="kids_menu")
+            ul(class="nav navbar-nav navbar-right no_small")
+              li: a(href="#",class="facebook"): i(class="fab fa-facebook-f")
+              li: a(href="#",class="twitter"): i(class="fab fa-twitter")
+              li: a(href="#",class="whats"): i(class="fab fa-whatsapp")
+              li: a(href="#",class="google"): i(class="fab fa-google")
+            ul(class="nav navbar-nav navbar-right" id="nav_links_small")
+              li: a(href="#", data-value="#home") home
+              li: a(href="#", data-value="#about") about
+              li: a(href="#", data-value="#services") services
+              li: a(href="#", data-value="#contact") contact
+            ul(class="nav navbar-nav navbar-right" id="nav_links")
+              li: a(href="#", data-value="#home") home
+              li: a(href="#", data-value="#about") about
+              li: a(href="#", data-value="#services") services
+              li: a(href="#", data-value="#contact") contact
+        // ###container
+      // #### nav
+
+
+      // start_header
+      header
+        .kh
+          img(src="imgs/hkr.png" class="img-responsive")
+        .container
+          img(src="imgs/header_face.png" class="face img-responsive")
+          div(class="col-md-12")
+            div.text_logo
+              h1(class="like_logo text-uppercase")
+                | kids #[strong sport]
+              p.text-uppercase back to school
+
+      
+
+      // Start About
+      div(class="about", id="about")
+        .kh
+          img(src="imgs/akr.png" class="img-responsive")
+        .container.text-center
+          div(class="about_info")
+            img(src="imgs/about_logo.png")
+            h3.text-uppercase back to school
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid aperiam, ab odio officiis laudantium, incidunt veniam atque facere aspernatur sint beatae, repudiandae sapiente amet dolorum velit libero quam commodi minus!
+            form(action="", method="post")
+              div(class="form-group")
+                input(type="text", class="search_input form-control", placeholder="more info")
+                i(class="fas fa-search")
+      
+
+      // More_about
+      div(class="more_about", id="more_about")
+        .container.text-left
+          div(class="more_info")
+            div(class="col-md-8 col-sm-8 col-xs-12")
+              .kh
+                img(src="imgs/more_about.png", class="img-responsive")
+            div(class="col-md-4 col-sm-4 col-xs-12")
+              h3.text-capitalize ready?
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur ipsa hic saepe totam, cupiditate earum unde assumenda est accusantium nulla voluptate rerum? Commodi, odit perferendis dolorem veritatis placeat hic!. cupiditate earum unde assumenda est accusantium nulla voluptate rerum? Commodi, odit perferendis dolorem veritatis placeat hic!
+            .clearfix
+      
+
+      // Who_We
+      div(class="who_we", id="who")
+        .container
+          .services_info
+            .col-md-12.col-xs-12
+              .col_info
+                h3.text-capitalize who we are?
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora odit, quaerat repellendus explicabo tenetur, aperiam est quam ducimus minus voluptatibus nulla quasi repudiandae eveniet quisquam eaque sed commodi, reprehenderit beatae?
+                button(type="button", class="btn btn-success text-capitalize") read more
+            .clearfix
+
+      
+
+      // Remember
+      div(class="remember", id="remember")
+        .remember_info
+          img(src="imgs/remember.png" class="main")
+          h2.text-uppercase your only #[span limit is yorr] #[span mind]
+          img(src="imgs/hkr.png" class="remember_hkr")
+
+
+      // Services
+      div(class="services", id="services")
+        img(src="imgs/akr.png" class="back")
+        .container.text-center
+          .row#row1
+            .col-md-6.content
+              h3.text-capitalize more info
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolorum ipsa sunt sapiente, quis voluptatum eum enim maxime rem! Atque enim sunt accusantium autem cumque nobis vero nemo voluptates consequuntur.
+            .col-md-6.icon
+              img(src="imgs/ser1.png", class="img-responsive center-block")
+          .row#row2
+            .col-md-6.icon
+              img(src="imgs/ser2.png", class="img-responsive center-block")
+            .col-md-6.content
+              h3.text-capitalize more info
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolorum ipsa sunt sapiente, quis voluptatum eum enim maxime rem! Atque enim sunt accusantium autem cumque nobis vero nemo voluptates consequuntur.
+          .row#row3
+            .col-md-6.content
+              h3.text-capitalize more info
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolorum ipsa sunt sapiente, quis voluptatum eum enim maxime rem! Atque enim sunt accusantium autem cumque nobis vero nemo voluptates consequuntur.
+            .col-md-6.icon
+              img(src="imgs/ser3.png", class="img-responsive center-block")
+      
+
+
+      // Footer
+      div(class="footer contact",id="contact")
+        .container
+          .col-md-4.col-xs-9
+            h3.text-uppercase contact us
+            p 23rd Avenue nº54, Montreal - Canada
+            p 123-456-789 #[span www.sushilogo.com]
+          .col-md-8.col-xs-3
+            ul.list-unstyled#footer_links
+              li 
+                span(class="text-uppercase", data-value="#home") home
+              li
+                span(class="text-uppercase", data-value="#about") about
+              li
+                span(class="text-uppercase", data-value="#services") services
+              li
+                span(class="text-uppercase", data-value="#contact") contact
+          .clearfix
+          .divider
+          .col-md-12.text-right
+            a(href="#"): i(class="fab fa-facebook-f facebook")
+            a(href="#"): i(class="fab fa-twitter twitter")
+            a(href="#"): i(class="fab fa-whatsapp whats")
+            a(href="#"): i(class="fab fa-google google")
+      // ##### End 
+
+      // jquery_file 
+      script(src="js/jquery-1.12.0.min.js")
+      // bootstrap3 
+      script(src="js/bootstrap.min.js")
+      // our_script 
+      script(src="js/plugins.js")
